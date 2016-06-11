@@ -2,7 +2,6 @@ global.api = {};
 api.fs = require('fs');
 api.http = require('http');
 api.websocket = require('websocket');
-
 var index = api.fs.readFileSync('./index.html');
 
 var server = api.http.createServer(function(req, res) {

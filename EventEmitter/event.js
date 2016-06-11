@@ -1,10 +1,9 @@
 'use strict';
-
 api.events = require('events');
 
 api.events.enhancedEventEmitter = function() {
-  var ee = new api.events.EventEmitter(),
-      emit = ee.emit;
+  var ee = new api.events.EventEmitter();
+  var emit = ee.emit;
   ee.emit = function() {
     var args = [];
     Array.prototype.push.apply(args, arguments);
